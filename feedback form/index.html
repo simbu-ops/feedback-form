@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="feedback-container">
+    <div class="feedback-card">
+      <h2>We Value Your Feedback</h2>
+      <p>Please take a moment to let us know about your experience.</p>
+      <form id="feedback-form">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name">
+        </div>
+        <div class="input-group">
+          <label for="department">Department</label>
+          <input type="text" id="department" name="department" required placeholder="Your department">
+        </div>
+        <div class="input-group">
+          <label for="class">Class</label>
+          <input type="text" id="class" name="class" required placeholder="Your class">
+        </div>
+        <div class="input-group">
+          <label for="rollno">Roll No</label>
+          <input type="text" id="rollno" name="rollno" required placeholder="Your roll number">
+        </div>
+        <div class="input-group">
+          <label for="phone">Phone No</label>
+          <input type="tel" id="phone" name="phone" required placeholder="Your phone number">
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Your email address">
+        </div>
+        <div class="input-group">
+          <label for="feedback">Feedback</label>
+          <textarea id="feedback" name="feedback" rows="5" required placeholder="Share your thoughts..."></textarea>
+        </div>
+        <button type="submit">Submit Feedback</button>
+      </form>
+      <div class="thank-you-message hidden">Thank you for your feedback!</div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

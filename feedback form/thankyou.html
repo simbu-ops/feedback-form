@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <section class="feedback-container">
+    <div class="feedback-card">
+      <h2>Thank You for Your Feedback!</h2>
+      <p>Here's what you submitted:</p>
+      <div id="feedback-display"></div>
+    </div>
+  </section>
+  <script>
+    // Retrieve and display feedback data
+    const feedbackData = JSON.parse(localStorage.getItem("feedbackData"));
+    const feedbackDisplay = document.getElementById("feedback-display");
+
+    feedbackDisplay.innerHTML = `
+      <p><strong>Name:</strong> ${feedbackData.name}</p>
+      <p><strong>Department:</strong> ${feedbackData.department}</p>
+      <p><strong>Class:</strong> ${feedbackData.class}</p>
+      <p><strong>Roll No:</strong> ${feedbackData.rollno}</p>
+      <p><strong>Phone No:</strong> ${feedbackData.phone}</p>
+      <p><strong>Email:</strong> ${feedbackData.email}</p>
+      <p><strong>Feedback:</strong> ${feedbackData.feedback}</p>
+    `;
+  </script>
+</body>
+</html>
